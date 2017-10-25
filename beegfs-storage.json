@@ -28,7 +28,7 @@
     "nodeOSSettings": "[parameters('nodeOSSettings')]",
     "sshKeyPath": "[concat('/home/',variables('nodeOSSettings').adminUserName,'/.ssh/authorized_keys')]",
     "virtualNetworkName": "VNET_EDA",
-    "subnetName": "Subnet_Storage",
+    "subnetName": "Subnet-Storage",
     "nicName": "[concat(parameters('vmssName'), 'nic')]",
     "ipConfigName": "[concat(parameters('vmssName'), 'ipconfig')]",
     "installParams": "[concat(variables('beeGFSNodeSettings').MasterName,' ', variables('beeGFSNodeSettings').nodeType,' ', variables('beeGFSNodeSettings').RAIDLevel)]",
