@@ -150,7 +150,7 @@
     },
     "RGvnetName": {
       "type": "string",
-      "defaultValue": "TSMC-EDA-NETWORK2",
+      "defaultValue": "TSMC-EDA-NETWORK",
       "metadata": {
         "description": "Name of the RG of the virtual network which master server is using."
       }
