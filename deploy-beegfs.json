@@ -194,7 +194,7 @@
     "beeGFSNodeSettings": {
       "vnetRG": "[parameters('RGvnetName')]",
       "vnetName": "VNET_EDA",
-      "subnetName": "Subnet_Storage",
+      "subnetName": "Subnet-Storage",
       "MasterName": "[parameters('masterName')]",
       "nodeType": "[parameters('nodeType')]",
       "customDomain": "mydom",
