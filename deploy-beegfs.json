@@ -155,6 +155,13 @@
         "description": "Name of the RG of the virtual network which master server is using."
       }
     },
+    "VNETName": {
+      "type": "string",
+      "defaultValue": "VNET_EDA",
+      "metadata": {
+        "description": "Name of the virtual network which master server is using."
+      }
+    },
     "masterName": {
       "type": "string",
       "metadata": {
@@ -193,7 +200,7 @@
     "image": "[parameters('VMImage')]",
     "beeGFSNodeSettings": {
       "vnetRG": "[parameters('RGvnetName')]",
-      "vnetName": "VNET_EDA",
+      "vnetName": "[parameters('VNETName')]",
       "subnetName": "Subnet-Storage",
       "MasterName": "[parameters('masterName')]",
       "nodeType": "[parameters('nodeType')]",
