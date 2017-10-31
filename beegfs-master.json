@@ -81,7 +81,13 @@
       "metadata": {
         "description": "SSH rsa public key file as a string."
       }
-    }
+    },
+    "RG_VNET": {
+      "type": "string",
+      "metadata": {
+        "description": "Resource Group of the existing Virtual Network as a string."
+      }
+    }	  
   },
   "variables": {
 	  "RG_VNET":"TSMC-EDA-NETWORK",
