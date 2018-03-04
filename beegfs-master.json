@@ -94,7 +94,7 @@
 	 "description": "subnet name which master server belongs to as a string."
       }
     },
-    "RG_VNET": {
+    "RGName": {
       "type": "string",
       "metadata": {
         "description": "Resource Group of the existing Virtual Network as a string."
@@ -102,7 +102,7 @@
     }	  
   },
   "variables": {
-    "RG_VNET": "[parameters('RG_VNET')]",
+    "RG_VNET": "[parameters('RGName')]",
     "virtualNetworkName": "[parameters('vnetName')]",
     "subnetName": "[parameters('subnetName')]",
     "publicIPAddressName": "[concat(parameters('vmssName'), 'pip')]",
