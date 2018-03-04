@@ -67,7 +67,7 @@
         "CentOS_7.4"
       ],
       "metadata": {
-        "description": "VM Image."
+       "description": "VM Image."
       }
     },
     "adminUsername": {
@@ -103,7 +103,7 @@
   },
   "variables": {
     "RG_VNET": "[parameters('RG_VNET')]",
-     "virtualNetworkName": "[parameters('vnetName')]",
+    "virtualNetworkName": "[parameters('vnetName')]",
     "subnetName": "[parameters('subnetName')]",
     "publicIPAddressName": "[concat(parameters('vmssName'), 'pip')]",
     "loadBalancerName": "[concat(parameters('vmssName'), 'lb')]",
