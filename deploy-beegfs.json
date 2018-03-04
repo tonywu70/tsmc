@@ -689,8 +689,8 @@
               {
                 "name": "[variables('nicName')]",
                 "properties": {
-                  "primary": "true",
-                  "enableAcceleratedNetworking": "true",
+                  "primary": true,
+                  "enableAcceleratedNetworking": true,
                   "ipConfigurations": [
                     {
                       "name": "[variables('ipConfigName')]",
