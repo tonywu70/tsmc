@@ -82,6 +82,18 @@
         "description": "SSH rsa public key file as a string."
       }
     },
+    "vnetName": {
+      "type": "string",
+       "metadata": {
+	 "description": "Vnet name which master server belongs to as a string."
+      }
+    },
+    "subnetName": {
+      "type": "string",
+      "metadata": {
+	 "description": "subnet name which master server belongs to as a string."
+      }
+    },
     "RG_VNET": {
       "type": "string",
       "metadata": {
@@ -90,11 +102,11 @@
     }	  
   },
   "variables": {
-	  "RG_VNET": "[parameters('RG_VNET')]",
+    "RG_VNET": "[parameters('RG_VNET')]",
     "addressPrefix": "10.234.36.0/23",
     "subnetPrefix": "10.234.37.64/27",  
-    "virtualNetworkName": "VNET_EDA",
-    "subnetName": "Subnet-Storage",
+    "virtualNetworkName": "[parameters('vnetName")]",
+    "subnetName": "[parameters('subnetName")]",
     "publicIPAddressName": "[concat(parameters('vmssName'), 'pip')]",
     "loadBalancerName": "[concat(parameters('vmssName'), 'lb')]",
     "publicIPAddressID": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]",
