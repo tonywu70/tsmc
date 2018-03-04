@@ -11,7 +11,6 @@
     },
     "nodeType": {
       "type": "string",
-      "defaultValue": "all",
       "allowedValues": [
         "all",
         "both",
@@ -28,13 +27,11 @@
       "metadata": {
         "description": "Number of BeeGFS nodes (100 or less)."
       },
-      "defaultValue": 1,
       "minValue": 1,
       "maxValue": 100
     },
     "VMSize": {
       "type": "string",
-      "defaultValue": "Standard_DS3_v2",
       "allowedValues": [
         "Standard_DS1",
         "Standard_DS2",
@@ -75,7 +72,6 @@
     },
     "VMImage": {
       "type": "string",
-      "defaultValue": "CentOS_7.4",
       "allowedValues": [
         "CentOS_7.4"
       ],
@@ -97,7 +93,6 @@
     },
     "storageDiskSize": {
       "type": "string",
-      "defaultValue": "P10",
       "allowedValues": [
         "P10",
         "P20",
@@ -109,7 +104,6 @@
     },
     "StorageDisksCount": {
       "type": "int",
-      "defaultValue": 1,
       "minValue": 0,
       "maxValue": 63,
       "metadata": {
@@ -118,7 +112,6 @@
     },
     "metaDiskSize": {
       "type": "string",
-      "defaultValue": "P10",
       "allowedValues": [
         "P10",
         "P20",
@@ -130,7 +123,6 @@
     },
     "MetaDisksCount": {
       "type": "int",
-      "defaultValue": 1,
       "minValue": 0,
       "maxValue": 4,
       "metadata": {
@@ -139,7 +131,6 @@
     },
     "volumeType": {
       "type": "string",
-      "defaultValue": "RAID0",
       "allowedValues": [
         "RAID0",
         "RAID5"
@@ -150,21 +141,18 @@
     },
     "RGName": {
       "type": "string",
-      "defaultValue": "TSMC-EDA-NETWORK",
       "metadata": {
         "description": "Name of the RG of the virtual network which master server is using."
       }
     },
     "vnetName": {
       "type": "string",
-      "defaultValue": "VNET_EDA",
       "metadata": {
         "description": "Name of the virtual network which master server is using."
       }
     },
     "subnetName": {
       "type": "string",
-      "defaultValue": "VNET_TEST",
       "metadata": {
         "description": "Name of the subnet which master server is using."
       }
