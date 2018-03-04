@@ -36,7 +36,7 @@
         "Standard_DS3_v2",
         "Standard_DS4_v2",
         "Standard_DS5_v2",
-        "Standard_DS11_v2",
+4        "Standard_DS11_v2",
         "Standard_DS12_v2",
         "Standard_DS13_v2",
         "Standard_DS14_v2",
@@ -62,7 +62,7 @@
     },
     "VMImage": {
       "type": "string",
-      "defaultValue": "CentOS_7.3",
+      "defaultValue": "CentOS_7.4",
       "allowedValues": [
         "CentOS_7.3"
       ],
@@ -129,10 +129,10 @@
       "VMsku": "[parameters('VMSize')]"
     },
     "computeNodeImages": {
-      "CentOS_7.3": {
+      "CentOS_7.4": {
         "publisher": "OpenLogic",
         "offer": "CentOS",
-        "sku": "7.3",
+        "sku": "7.4",
         "version": "latest"
       },
       "RHEL_7.2": {
