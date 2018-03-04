@@ -162,6 +162,13 @@
         "description": "Name of the virtual network which master server is using."
       }
     },
+    "subnetName": {
+      "type": "string",
+      "defaultValue": "VNET_TEST",
+      "metadata": {
+        "description": "Name of the subnet which master server is using."
+      }
+    },
     "masterName": {
       "type": "string",
       "metadata": {
@@ -201,7 +208,7 @@
     "beeGFSNodeSettings": {
       "vnetRG": "[parameters('RGvnetName')]",
       "vnetName": "[parameters('VNETName')]",
-      "subnetName": "Subnet-Storage",
+      "subnetName": "[parameters('subnetName')]",
       "MasterName": "[parameters('masterName')]",
       "nodeType": "[parameters('nodeType')]",
       "customDomain": "mydom",
