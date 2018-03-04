@@ -1,3 +1,4 @@
+
 {
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
@@ -14,12 +15,21 @@
     "beeGFSNodeSettings": {
       "type": "object"
     },
+    "RGName": {
+      "type": "string"
+    },
+     "vnetName": {
+      "type": "string"
+    },
+    "subnetName": {
+      "type": "string"
+    },
     "nodeOSSettings": {
       "type": "object"
     }
   },
   "variables": {
-    "RG_VNET": "TSMC-EDA-NETWORK", 
+    "RG_VNET": "[parameters('RGName')]", 
     "networkApiVersion": "2016-06-01",
     "insightsApiVersion": "2015-04-01",
     "computeApiVersion": "2016-04-30-preview",
@@ -27,8 +37,8 @@
     "beeGFSNodeSettings": "[parameters('beeGFSNodeSettings')]",
     "nodeOSSettings": "[parameters('nodeOSSettings')]",
     "sshKeyPath": "[concat('/home/',variables('nodeOSSettings').adminUserName,'/.ssh/authorized_keys')]",
-    "virtualNetworkName": "VNET_EDA",
-    "subnetName": "Subnet-Storage",
+    "virtualNetworkName": "[parameters('vnetName')]",
+    "subnetName": "[parameters('subnetName')]",
     "nicName": "[concat(parameters('vmssName'), 'nic')]",
     "ipConfigName": "[concat(parameters('vmssName'), 'ipconfig')]",
     "installParams": "[concat(variables('beeGFSNodeSettings').MasterName,' ', variables('beeGFSNodeSettings').nodeType,' ', variables('beeGFSNodeSettings').RAIDLevel)]",
