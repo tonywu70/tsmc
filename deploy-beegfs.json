@@ -171,7 +171,7 @@
     "networkApiVersion": "2016-06-01",
     "insightsApiVersion": "2015-04-01",
     "deploymentApiVersion": "2016-09-01",
-    "computeApiVersion": "2016-04-30-preview",
+    "computeApiVersion": "2017-03-30",
     "nicName": "[concat(parameters('vmssName'), 'nic')]",
     "ipConfigName": "[concat(parameters('vmssName'), 'ipconfig')]",
     "location": "[resourceGroup().location]",
