@@ -148,14 +148,14 @@
         "description": "Volume for data disks."
       }
     },
-    "RGvnetName": {
+    "RGName": {
       "type": "string",
       "defaultValue": "TSMC-EDA-NETWORK",
       "metadata": {
         "description": "Name of the RG of the virtual network which master server is using."
       }
     },
-    "VNETName": {
+    "vnetName": {
       "type": "string",
       "defaultValue": "VNET_EDA",
       "metadata": {
@@ -206,8 +206,8 @@
     },
     "image": "[parameters('VMImage')]",
     "beeGFSNodeSettings": {
-      "vnetRG": "[parameters('RGvnetName')]",
-      "vnetName": "[parameters('VNETName')]",
+      "vnetRG": "[parameters('RGName')]",
+      "vnetName": "[parameters('vnetName')]",
       "subnetName": "[parameters('subnetName')]",
       "MasterName": "[parameters('masterName')]",
       "nodeType": "[parameters('nodeType')]",
