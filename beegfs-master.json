@@ -131,6 +131,12 @@
       },
       "P30": {
         "size": 1023
+      },
+      "P40": {
+        "size": 2048
+      },    
+      "P50": {
+        "size": 4095
       }
     },
     "image": "[parameters('VMImage')]",
