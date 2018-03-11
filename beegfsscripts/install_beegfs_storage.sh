@@ -376,7 +376,7 @@ tune_tcp
 setup_domain
 install_beegfs_repo
 install_beegfs
-save_scripts
+install_LIS
 
 # Create marker file so we know we're configured
 touch $SETUP_MARKER
