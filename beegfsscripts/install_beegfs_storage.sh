@@ -349,8 +349,8 @@ install_LIS()
 	#tar xvzf lis-rpms-4.1.3-1.tar.gz
 	#cd LISISO
 	#./install.sh
-	yum update
-	yum install microsoft-hyper-v
+	yum -y update
+	yum -y install microsoft-hyper-v
 }
 
 
