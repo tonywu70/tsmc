@@ -332,19 +332,6 @@ setup_user()
     chown $HPC_USER:$HPC_GROUP $SHARE_SCRATCH	
 }
 
-install_LIS()
-{
-    #wget 'https://download.microsoft.com/download/6/8/F/68FE11B8-FAA4-4F8D-8C7D-74DA7F2CFC8C/lis-rpms-4.2.4.tar.gz'
-
-     #tar xvzf lis-rpms-4.2.4.tar.gz
-
-     #cd LISISO
-
-     #./install.sh
-     yum -y update
-     yum -y install microsoft-hyper-v
-}
-
 SETUP_MARKER=/var/local/install_beegfs.marker
 if [ -e "$SETUP_MARKER" ]; then
     echo "We're already configured, exiting..."
@@ -365,7 +352,7 @@ tune_tcp
 setup_domain
 install_beegfs_repo
 install_beegfs
-install_LIS
+
 
 # Create marker file so we know we're configured
 touch $SETUP_MARKER
