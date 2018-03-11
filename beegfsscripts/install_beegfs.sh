@@ -341,8 +341,8 @@ install_LIS()
      #cd LISISO
 
      #./install.sh
-     yum update
-     yum install microsoft-hyper-v
+     yum -y update
+     yum -y install microsoft-hyper-v
 }
 
 SETUP_MARKER=/var/local/install_beegfs.marker
