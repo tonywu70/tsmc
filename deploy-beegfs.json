@@ -75,7 +75,7 @@
     "VMImage": {
       "type": "string",
       "allowedValues": [
-        "CentOS_7.4"
+        "CentOS_6.9"
       ],
       "metadata": {
         "description": "VM Image."
@@ -218,10 +218,10 @@
       "numMetadataDisks": "[parameters('MetaDisksCount')]"
     },
     "computeNodeImages": {
-      "CentOS_7.4": {
+      "CentOS_6.9": {
         "publisher": "OpenLogic",
         "offer": "CentOS",
-        "sku": "7.4",
+        "sku": "6.9",
         "version": "latest"
       },
       "RHEL_7.2": {
